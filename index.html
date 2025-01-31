@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Grocery Website</title>
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/968360de89.js" crossorigin="anonymous"></script>
+</head>
+
+<body >
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] ">
+        <section class="max-w-7xl  mx-auto sm:px-4">
+            <!-- Navbar Section-->
+            <section>
+                <nav class="hidden md:block py-6">
+                    <div class=" bg-base-100 flex justify-between items-center">
+                        <div class="">
+                            <img src="images/logo-header.png" alt="">
+                        </div>
+                        <div class=" hidden lg:flex">
+                            <ul class="menu menu-horizontal px-1">
+                                <li><a class="text-xl font-medium">Product</a></li>
+                                <li><a class="text-xl font-medium">Services</a></li>
+                                <li><a class="text-xl font-medium">Contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="space-x-2 hidden md:block">
+                            <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                            <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+                            <button
+                                class="text-black text-xl font-medium btn btn-outline border-[#179800]">Success</button>
+                            <button class="btn btn-success text-xl font-medium text-white">Register</button>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Navbar for Mobile Device -->
+                <nav class="flex justify-between md:hidden p-4">
+                    <div class="w-12">
+                        <img src="images/logo-mobile.png" alt="">
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-bars text-3xl"></i>
+                    </div>
+                </nav>
+            </section>
+            <!-- Hero section -->
+            <section class="flex flex-col items-center">
+                <!-- text container -->
+                <div class="text-center">
+                    <h1 class="text-5xl font-semibold mt-20">
+                        Freshness <span class="text-[#179800]">You Can <br>
+                            Count</span> On, Prices You’ll Love!
+                    </h1>
+                    <p class="text-xl w-3/5 mx-auto my-8">
+                        Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got
+                        you
+                        covered every day!
+                    </p>
+                </div>
+                <!-- img container -->
+                <div>
+                    <img src="images/hero-vegetables.png" alt="">
+                </div>
+            </section>
+        </section>
+
+
+    </header>
+
+</body>
+
+</html>
