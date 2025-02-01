@@ -10,9 +10,41 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/968360de89.js" crossorigin="anonymous"></script>
+    <!-- Sora & Poopins Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <!-- Style For animation & Fonts -->
+    <style>
+        .sora {
+            font-family: "Sora", serif;
+        }
+
+        .poppins {
+            font-family: "Poppins", serif;
+        }
+
+        .animateme {
+            animation: fadeSlide 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes fadeSlide {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 
-<body>
+<body class="sora">
     <header class=" bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] ">
         <section class="">
             <!-- Navbar Section-->
@@ -39,24 +71,27 @@
                     </div>
                 </nav>
                 <!-- Navbar for Mobile Device -->
-                <nav class="flex justify-between md:hidden p-4">
-                    <div class="w-12">
-                        <img src="images/logo-mobile.png" alt="">
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-bars text-3xl"></i>
-                    </div>
-                </nav>
+                <section class="md:hidden">
+                    <nav class="flex justify-between p-4">
+                        <div class="w-12">
+                            <img src="images/logo-mobile.png" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-bars text-3xl"></i>
+                        </div>
+                    </nav>
+                    <hr class="border border-[#179800]">
+                </section>
             </section>
             <!-- Hero section -->
             <section class="flex flex-col items-center">
                 <!-- text container -->
                 <div class="text-center">
-                    <h1 class="text-5xl font-semibold mt-20">
+                    <h1 class="md:text-5xl  opacity-0 animateme text-4xl font-semibold md:mt-20 mt-12">
                         Freshness <span class="text-[#179800]">You Can <br>
                             Count</span> On, Prices You’ll Love!
                     </h1>
-                    <p class="text-xl w-3/5 mx-auto my-8">
+                    <p class=" text-xl md:w-3/5 w-[94%] mx-auto my-8">
                         Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got
                         you
                         covered every day!
@@ -73,7 +108,7 @@
         <!-- service Section -->
         <section class="max-w-7xl  mx-auto px-4 my-12 md:my-36 ">
             <div>
-                <h3 class="text-4xl font-semibold text-[#179800] pb-12">Services</h3>
+                <h3 class="md:text-4xl text-2xl font-semibold text-[#179800] md:mb-12 mb-8">Services</h3>
             </div>
             <div class="flex md:flex-row flex-col md:gap-6 gap-5">
                 <!-- first card -->
@@ -111,7 +146,7 @@
         <!-- Products section -->
         <section class="bg-[#EFEBE3] md:py-36 py-12 ">
             <div class="max-w-7xl  mx-auto px-4">
-                <div class="text-4xl font-semibold text-[#179800] pb-12">
+                <div class="md:text-4xl text-2xl font-semibold text-[#179800] md:pb-12 pb-8">
                     <h3>Popular Products</h3>
                 </div>
                 <div class="flex flex-col md:flex-row gap-6">
@@ -263,12 +298,85 @@
                 </div>
             </div>
         </section>
+        <!-- customar reviews -->
+        <section class="max-w-7xl  mx-auto px-4 my-12 md:my-36 ">
+            <div>
+                <h3 class="md:text-4xl text-2xl font-semibold text-[#179800] md:mb-12 mb-8">Customer Reviews</h3>
+            </div>
+            <div class="flex md:flex-row flex-col md:gap-6 gap-5">
+                <!-- first card -->
+                <div class="bg-[#EFEBE3] rounded-2xl p-8 w-full">
+                    <div class="flex gap-5">
+                        <div class="rounded-full w-20">
+                            <img class="rounded-full w-20" src="images/nahid.jpeg" alt="">
+                        </div>
+                        <div class="">
+                            <h3 class="text-2xl font-bold pt-4">Nahid Hasan </h3>
+                            <div class="flex text-yellow-400 mt-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-xl font-light pt-3">
+                        "Fresh, organic produce delivered fast. Great quality, eco-friendly packaging. Highly recommend
+                        this website!"
+                    </p>
+                </div>
+                <!-- scound Card -->
+                <div class="bg-[#EFEBE3] rounded-2xl p-8 w-full">
+                    <div class="flex gap-5">
+                        <div class="rounded-full w-20">
+                            <img class="rounded-full w-20" src="images/Rijoan-Maruf.jpg" alt="">
+                        </div>
+                        <div class="">
+                            <h3 class="text-2xl font-bold pt-4">Rijoan Maruf </h3>
+                            <div class="flex text-yellow-400 mt-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-xl font-light pt-3">
+                        "Amazing variety of healthy foods. Tastes fresh, easy shopping experience. Love this store!"
+                    </p>
+                </div>
+                <!-- third Card -->
+                <div class="bg-[#EFEBE3] rounded-2xl p-8 w-full">
+                    <div class="flex gap-5">
+                        <div class="rounded-full">
+                            <img class="rounded-full w-20" src="images/Labu.jpg" alt="">
+                        </div>
+                        <div class="">
+                            <h3 class="text-2xl font-bold pt-4">Toslimuzzaman Setu </h3>
+                            <div class="flex text-yellow-400 mt-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-xl font-light pt-3">
+                        "First order impressed me—fresh items, quick delivery, eco-friendly packaging. Will order again
+                        soon!"
+                    </p>
+                </div>
+            </div>
+        </section>
         <!-- Arrival & Offers -->
         <section class=" max-w-7xl  mx-auto px-4 my-12 md:my-36 ">
             <div>
-                <h3 class="text-4xl font-semibold text-[#179800] pb-12">Arrival & Offers</h3>
+                <h3 class="md:text-4xl text-2xl font-semibold text-[#179800] md:pb-12 pb-8">Arrival & Offers</h3>
             </div>
-            <div class="md:flex md:gap-5">
+            <div class="md:flex md:gap-5 poppins">
                 <div
                     class="bg-[#115414] md:rounded-3xl rounded-xl flex items-center justify-between md:pl-10 pl-[18px] md:pt-8 pt-6 md:w-[60%] mb-4 md:h-[344px] h-[190px]">
                     <div class="">
@@ -304,20 +412,21 @@
 
         </section>
     </main>
-
     <!-- footer Section -->
     <section>
         <div class="relative md:max-w-7xl w-[94%]  mx-auto">
-            <div class="bg-[#EFEBE3]  rounded-3xl md:py-14 py-8 md:px-24 px-10 md:flex gap-32 items-center absolute w-full -top-[230px] text-center md:text-start">
+            <div
+                class="bg-[#EFEBE3]  rounded-3xl md:py-14 py-8 md:px-24 px-10 md:flex gap-32 items-center absolute w-full -top-[230px] text-center md:text-start">
                 <div>
                     <img class="" src="images/vegetable-busket.png" alt="">
                 </div>
                 <div>
-                    <h3 class="md:text-4xl text-2xl md:font-semibold mt-6 md:mt-0 font-bold text-[#179800]">Get Grocery News!</h3>
+                    <h3 class="md:text-4xl text-2xl md:font-semibold mt-6 md:mt-0 font-bold text-[#179800]">Get Grocery
+                        News!</h3>
                     <p class="md:text-xl md:mt-5 mt-3">Exclusive training tips, ticks, product deals and more.</p>
                     <div class="md:my-9 my-5">
-                        <input class="px-3 py-3 rounded-md bg-white text-[#C4C4C4] text-[16px] md:w-[80%] w-full" type="text"
-                            placeholder="Enter email...">
+                        <input class="px-3 py-3 rounded-md bg-white text-[#C4C4C4] text-[16px] md:w-[80%] w-full"
+                            type="text" placeholder="Enter email...">
                     </div>
                     <button class="px-8 bg-[#179800] rounded-lg text-white py-2 md:text-xl">Subscribe</button>
                 </div>
@@ -340,11 +449,11 @@
                     </div>
                     <div class="">
                         <p>Follow Us</p>
-                        <div class="text-xl cursor-pointer mt-2">
-                            <i class="fa-brands fa-facebook mr-6"></i>
-                            <i class="fa-brands fa-instagram mr-6"></i>
-                            <i class="fa-brands fa-linkedin mr-6"></i>
-                            <i class="fa-brands fa-youtube"></i>
+                        <div class="text-xlmt-2">
+                            <i class="fa-brands fa-facebook mr-6  cursor-pointer "></i>
+                            <i class="fa-brands fa-instagram mr-6  cursor-pointer "></i>
+                            <i class="fa-brands fa-linkedin mr-6  cursor-pointer "></i>
+                            <i class="fa-brands fa-youtube  cursor-pointer "></i>
                         </div>
                     </div>
                 </div>
